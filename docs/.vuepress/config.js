@@ -2,7 +2,7 @@ const slidebar = require('./config.sidebar')
 const update = require('./config.update')
 module.exports = {
     title: '程序员成长指北',
-    base: '/',
+    base: '/blog/',
     dest: './web',
     description: '一个用心帮助你成长的公众号',
 

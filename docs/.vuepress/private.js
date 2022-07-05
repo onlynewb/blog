@@ -1,14 +1,14 @@
 module.exports = {
   gitTalk: {
-    ClientID: "f62985f756bb40a23405", // gitTalk ClientID
-    ClientSecret: "8da14e8f2dae91d15b10b8cb8b3a6983e7d1f620", //gitTalk ClientSecret
+    ClientID: "a2ce889cabad01601a96", // gitTalk ClientID
+    ClientSecret: "0ab209c3678173219103909f9afc680ee546a9ac", //gitTalk ClientSecret
     repo: "blog",
-    owner:"xiaobo521",  
-    admin:"xiaobo521" //可以添加多个管理员，可以是你自己
+    owner:"onlynewb",
+    admin:"onlynewb" //可以添加多个管理员，可以是你自己
   },
   valineComment:{
-    AppID: "yFdEjUId6MN6qFTMuulnsjQD-gzGzoHsz",
-    AppKey: "ENQa5353eWxu7OjqIscnQc4M",
+    AppID: "JzsCeUdKIp8888HcgRzxfH7X-gzGzoHsz",
+    AppKey: "Q4Btq0IF4NraY1KLXx9wOXl5",
   }
 
 
