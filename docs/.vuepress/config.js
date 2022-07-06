@@ -1,8 +1,9 @@
 const slidebar = require('./config.sidebar')
 const update = require('./config.update')
 module.exports = {
+    theme:'vdoing',
     title: '程序员成长指北',
-    base: '/blog/',
+    base: '/',
     dest: './web',
     description: '一个用心帮助你成长的公众号',
 
