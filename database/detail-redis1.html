@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redis详细学习 入门篇 | 永远滴神</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" href="/favicon.ico" type="iamge/x-icon">
+    <meta name="description" content="一个用心帮助你成长的公众号">
+    <meta name="keywords" content="永远滴神 后端 公众号">
+    
+    <link rel="preload" href="/assets/css/0.styles.82a4f3fa.css" as="style"><link rel="preload" href="/assets/js/app.c279a524.js" as="script"><link rel="preload" href="/assets/js/2.0c1afcb6.js" as="script"><link rel="preload" href="/assets/js/24.48aa175f.js" as="script"><link rel="preload" href="/assets/js/7.84ef9767.js" as="script"><link rel="preload" href="/assets/js/12.f1c48cfc.js" as="script"><link rel="preload" href="/assets/js/13.70bd7ce1.js" as="script"><link rel="prefetch" href="/assets/js/10.e26101b4.js"><link rel="prefetch" href="/assets/js/11.9f39b567.js"><link rel="prefetch" href="/assets/js/14.2b6f6c3d.js"><link rel="prefetch" href="/assets/js/15.a79a89f0.js"><link rel="prefetch" href="/assets/js/16.4b42d084.js"><link rel="prefetch" href="/assets/js/17.a9cce4ad.js"><link rel="prefetch" href="/assets/js/18.fbbc06c5.js"><link rel="prefetch" href="/assets/js/19.a05e6a7c.js"><link rel="prefetch" href="/assets/js/20.9a58f68f.js"><link rel="prefetch" href="/assets/js/21.a2a6463a.js"><link rel="prefetch" href="/assets/js/22.8214d8b2.js"><link rel="prefetch" href="/assets/js/23.8cbb570e.js"><link rel="prefetch" href="/assets/js/25.84608df8.js"><link rel="prefetch" href="/assets/js/26.305db893.js"><link rel="prefetch" href="/assets/js/27.206035f7.js"><link rel="prefetch" href="/assets/js/28.67715c64.js"><link rel="prefetch" href="/assets/js/29.14071b9d.js"><link rel="prefetch" href="/assets/js/3.31bcfe44.js"><link rel="prefetch" href="/assets/js/30.dc0684e5.js"><link rel="prefetch" href="/assets/js/31.883ad823.js"><link rel="prefetch" href="/assets/js/32.ecf2894d.js"><link rel="prefetch" href="/assets/js/33.aff8d5e4.js"><link rel="prefetch" href="/assets/js/34.be686b6a.js"><link rel="prefetch" href="/assets/js/35.c0cb3ba1.js"><link rel="prefetch" href="/assets/js/36.a002f118.js"><link rel="prefetch" href="/assets/js/37.e76eaea2.js"><link rel="prefetch" href="/assets/js/38.b4604ac1.js"><link rel="prefetch" href="/assets/js/39.763c67c0.js"><link rel="prefetch" href="/assets/js/4.d0009a91.js"><link rel="prefetch" href="/assets/js/40.b9fd76a7.js"><link rel="prefetch" href="/assets/js/41.a42f44ff.js"><link rel="prefetch" href="/assets/js/42.b52500a4.js"><link rel="prefetch" href="/assets/js/43.eb1e5211.js"><link rel="prefetch" href="/assets/js/44.2cb493cd.js"><link rel="prefetch" href="/assets/js/45.d7f0976e.js"><link rel="prefetch" href="/assets/js/46.7ffb8b39.js"><link rel="prefetch" href="/assets/js/47.2967a68c.js"><link rel="prefetch" href="/assets/js/48.35389a81.js"><link rel="prefetch" href="/assets/js/49.0d17f7bc.js"><link rel="prefetch" href="/assets/js/5.c42b1e5e.js"><link rel="prefetch" href="/assets/js/50.9ca014f6.js"><link rel="prefetch" href="/assets/js/51.5956567e.js"><link rel="prefetch" href="/assets/js/52.6da5773a.js"><link rel="prefetch" href="/assets/js/53.030556f0.js"><link rel="prefetch" href="/assets/js/54.e54a1605.js"><link rel="prefetch" href="/assets/js/55.0f443484.js"><link rel="prefetch" href="/assets/js/56.b77dce48.js"><link rel="prefetch" href="/assets/js/57.e8803295.js"><link rel="prefetch" href="/assets/js/58.eeb1ac26.js"><link rel="prefetch" href="/assets/js/59.0b9b5c35.js"><link rel="prefetch" href="/assets/js/6.c54a32fc.js"><link rel="prefetch" href="/assets/js/60.f3b0cf20.js"><link rel="prefetch" href="/assets/js/61.b2b65094.js"><link rel="prefetch" href="/assets/js/62.b5df885c.js"><link rel="prefetch" href="/assets/js/63.029e4e19.js"><link rel="prefetch" href="/assets/js/64.c96e2154.js"><link rel="prefetch" href="/assets/js/65.9de74a66.js"><link rel="prefetch" href="/assets/js/66.194ed1ac.js"><link rel="prefetch" href="/assets/js/67.7d6aae93.js"><link rel="prefetch" href="/assets/js/68.469ec24a.js"><link rel="prefetch" href="/assets/js/69.66f2fcf5.js"><link rel="prefetch" href="/assets/js/70.876f0081.js"><link rel="prefetch" href="/assets/js/71.f7f93b2e.js"><link rel="prefetch" href="/assets/js/72.ba2032df.js"><link rel="prefetch" href="/assets/js/73.82cdb3d0.js"><link rel="prefetch" href="/assets/js/74.13d1084f.js"><link rel="prefetch" href="/assets/js/75.2e4b95b9.js"><link rel="prefetch" href="/assets/js/76.c3c1eaba.js"><link rel="prefetch" href="/assets/js/77.5674dbce.js"><link rel="prefetch" href="/assets/js/78.6b1fb7a6.js"><link rel="prefetch" href="/assets/js/79.5920b2ff.js"><link rel="prefetch" href="/assets/js/8.1bdaa967.js"><link rel="prefetch" href="/assets/js/80.cb244441.js"><link rel="prefetch" href="/assets/js/81.f6440a0e.js"><link rel="prefetch" href="/assets/js/82.0ec434bf.js"><link rel="prefetch" href="/assets/js/83.f3186073.js"><link rel="prefetch" href="/assets/js/9.b79e982a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.82a4f3fa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/home.png" alt="永远滴神" class="logo"> <span class="site-name can-hide">永远滴神</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/node/" class="nav-link">node</a></div><div class="nav-item"><a href="/netty/" class="nav-link">netty</a></div><div class="nav-item"><a href="/database/" class="nav-link router-link-active">数据库</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试问题</a></div><div class="nav-item"><a href="https://github.com/koala-coding/FE-Infer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  招聘●内推
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/about/2019_year_end.html" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/node/" class="nav-link">node</a></div><div class="nav-item"><a href="/netty/" class="nav-link">netty</a></div><div class="nav-item"><a href="/database/" class="nav-link router-link-active">数据库</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试问题</a></div><div class="nav-item"><a href="https://github.com/koala-coding/FE-Infer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  招聘●内推
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/about/2019_year_end.html" class="nav-link">关于我</a></div> <!----></nav> <div class="my_introduce" style="padding-left:1rem;"><div class="introduce_component" data-v-37981958><img src="/small.png" alt data-v-37981958> <div class="intro_content" data-v-37981958><h3 data-v-37981958>公众号:程序员成长指北</h3> <p data-v-37981958>koala 学习成长之路</p></div></div></div> <ul class="sidebar-links"><li><a href="/database/choice.html" class="sidebar-link">SQL 和 NoSQL 的区别与选择</a></li><li><a href="/database/mysql/baseFrame.html" class="sidebar-link">MySQL 基础架构你不知道的那些事</a></li><li><a href="/database/mysql/logSystem.html" class="sidebar-link">删库跑路后真的没有办法弥补了吗</a></li><li><a href="/database/mysql/optimize.html" class="sidebar-link">常用的数据库语句</a></li><li><a href="/database/mysql/writeSql.html" class="sidebar-link">如何写优雅的SQL原生语句</a></li><li><a href="/database/detail-redis1.html" aria-current="page" class="active sidebar-link">详细学习redis_入门篇</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/detail-redis1.html#什么是redis" class="sidebar-link">什么是Redis</a></li><li class="sidebar-sub-header"><a href="/database/detail-redis1.html#redis的应用场景" class="sidebar-link">redis的应用场景</a></li><li class="sidebar-sub-header"><a href="/database/detail-redis1.html#redis安装与启动" class="sidebar-link">redis安装与启动</a></li><li class="sidebar-sub-header"><a href="/database/detail-redis1.html#redis的基本数据类型" class="sidebar-link">redis的基本数据类型</a></li></ul></li><li><a href="/database/detail-redis2.html" class="sidebar-link">详细学习redis_进阶篇</a></li><li><a href="/database/detail-redis3.html" class="sidebar-link">详细学习redis_项目实战篇</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redis详细学习-入门篇"><a href="#redis详细学习-入门篇" class="header-anchor">#</a> Redis详细学习 入门篇</h1> <h2 id="什么是redis"><a href="#什么是redis" class="header-anchor">#</a> 什么是Redis</h2> <ul><li><p>基本概念</p> <p>redis是一个开源的、使用C语言编写的、支持网络交互的、可基于内存也可持久化的Key-Value数据库（非关系性数据库）。</p></li> <li><p>redis的优势</p></li></ul> <ol><li><p>速度快，因为数据存在内存中，类似于HashMap，HashMap的优势就是查找和操作的时间复杂度都是O(1)</p></li> <li><p>支持丰富数据类型，支持string，list，set，sorted set，hash</p></li> <li><p>支持事务，操作都是原子性，所谓的原子性就是对数据的更改要么全部执行，要么全部不执行</p></li> <li><p>丰富的特性：可用于缓存，消息，按key设置过期时间，过期后将会自动删除</p></li></ol> <h2 id="redis的应用场景"><a href="#redis的应用场景" class="header-anchor">#</a> redis的应用场景</h2> <ul><li><p>缓存</p> <p>(1) 对于一些要返回给前端数据的缓存，当有大量数据库sql操作时候，为了避免每次接口请求都要去查询数据库，可以把一些数据缓存到redis中，这样是直接从内存中获取数据，速度回增快很多。</p> <p>(2) web端用户，用于登陆缓存session数据，登陆的一些信息存到session中，缓存到redis中</p></li> <li><p>队列</p> <p>redis中提供了list接口，这个list提供了lpush和rpop，这两个方法具有原子性，可以插入队列元素和弹出队列元素。</p></li> <li><p>数据存储</p> <p>redis是非关系型数据库，可以把redis直接用于数据存储，提供了增删改查等操作，因为redis有良好的硬盘持久化机制，redis数据就可以定期持久化到硬盘中，保证了redis数据的完整性和安全性。</p></li> <li><p>redis锁实现防刷机制</p> <p>redis锁可以处理并发问题,redis数据类型中有一个set类型，set类型在存储数据的时候是无序的，而且每个值是不一样的，不能重复，这样就可以快速的查找元素中某个值是否存在，精确的进行增加删除操作。</p></li></ul> <p>说明:redis使用场景的基本操作会在redis学习(3)-实战篇中讲解</p> <h2 id="redis安装与启动"><a href="#redis安装与启动" class="header-anchor">#</a> redis安装与启动</h2> <ul><li>redis的安装</li></ul> <ol><li><p>redis安装比较简单请自行百度</p></li> <li><p>修改redis密码配置</p> <p>打开 redis.windows.conf 配置文件//window系统是带windows的linux系统是redis.conf
+找到requirepass foobared，把前面的#号去掉，把foobared改成密码
+例如requirepass 123456</p> <p>注意修改密码后需要重新启动redis服务器</p></li> <li><p>如何修改redis服务后台启动</p> <p>推荐博客:https://blog.csdn.net/ksdb0468473/article/details/52126009</p></li></ol> <ul><li>redis的基本命令</li></ul> <ol><li><p>检测启动redis客户端命令：</p> <p>redis-clis</p></li> <li><p>启动redis命令：</p> <p>./redis-server直接启动redis，有的时候需要启动固定配置文件（重新设置过密码）的redis，例如redis-server redis/redis.windows.conf或者./redis-server ../redis.conf</p></li> <li><p>redis服务相关命令</p> <p>卸载服务：redis-server --service-uninstall</p> <p>开启服务：redis-server --service-start</p> <p>停止服务：redis-server --service-stop</p></li></ol> <h2 id="redis的基本数据类型"><a href="#redis的基本数据类型" class="header-anchor">#</a> redis的基本数据类型</h2> <p>redis是一种高级的key-value非关系型数据库。，其中value支持五种数据类型：string,List,set,hash,sore set</p> <ul><li>字符串（string）
+string存储的元素类型可以是string/int/float，int类型可以进行增加和减少操作。
+代码实际操作过程：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@VM_160_197_centos /]# redis-cli
+127.0.0.1:6379&gt; set string1 koala
+OK
+127.0.0.1:6379&gt; get string1
+&quot;koala&quot;
+127.0.0.1:6379&gt; set string2 2
+OK
+127.0.0.1:6379&gt; get string2
+&quot;2&quot;
+127.0.0.1:6379&gt; incr string2
+(integer) 3
+127.0.0.1:6379&gt; get string2
+&quot;3&quot;
+127.0.0.1:6379&gt; decrby string2 2
+(integer) 1
+127.0.0.1:6379&gt; get string2
+&quot;1&quot;
+</code></pre></div><ul><li>字符串列表（list）
+list类型是一个有序的列表，有序表示的是从左到右还是从右到左，而且数据内容是可以重复的。
+代码实际操作过程：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@VM_160_197_centos /]# redis-cli
+127.0.0.1:6379&gt; lpush list1 12
+(integer) 1
+127.0.0.1:6379&gt; lpush list1 13
+(integer) 2
+127.0.0.1:6379&gt; lpush list1 12
+(integer) 3
+127.0.0.1:6379&gt; rpop list1
+&quot;12&quot;
+127.0.0.1:6379&gt; lpush list2 12
+(integer) 1
+127.0.0.1:6379&gt; lpush list2 13
+(integer) 2
+127.0.0.1:6379&gt; lpush list2 12
+(integer) 3
+127.0.0.1:6379&gt; llen list2
+(integer) 3
+127.0.0.1:6379&gt;
+</code></pre></div><ul><li><p>字符串集合（set）</p> <p>set类型中提供了无序的方式来存储多个不同的元素，set类型中每个元素的值都不一样，用户可以快速对元素中的值添加删除，检查某些值是否存在，<strong>重复的元素是无法继续插入集合的</strong>。
+代码实际操作过程：</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>127.0.0.1:6379&gt; sadd set1 12
+(integer) 1
+127.0.0.1:6379&gt; sadd set1 12
+(integer) 0
+127.0.0.1:6379&gt; scard set1
+(integer) 1
+127.0.0.1:6379&gt; sadd set1 13
+(integer) 1
+127.0.0.1:6379&gt; scard set1
+(integer) 2
+127.0.0.1:6379&gt; sadd set1 13
+(integer) 0
+127.0.0.1:6379&gt; sismember set1 13  //查看13是否在集合中
+(integer) 1
+127.0.0.1:6379&gt; srem set1 13    //从集合中删除13
+</code></pre></div><ul><li><p>哈希（hash）</p> <p>hash类型也叫散列类型，存储的时候存的是键值对。查询条数的时候只要是健不一样，就是不同的条数，尽管值是相同的。</p></li></ul> <p>代码实际操作过程：</p> <div class="language- extra-class"><pre class="language-text"><code>[root@VM_160_197_centos /]# redis-cli
+127.0.0.1:6379&gt; hset hash1 key1 12
+(integer) 1
+127.0.0.1:6379&gt; hget hash1 key1
+&quot;12&quot;
+127.0.0.1:6379&gt; hset hash1 key2 13
+(integer) 1
+127.0.0.1:6379&gt; hset hash1 key3 13
+(integer) 1
+127.0.0.1:6379&gt; hlen hash1//查询条数的时候只要是健不一样，就是不同的条数，尽管值是相同的。
+(integer) 3
+127.0.0.1:6379&gt; hset hsah1 key3 14
+(integer) 1
+127.0.0.1:6379&gt; hset hash1 key3 14
+(integer) 0
+127.0.0.1:6379&gt; hget hash1 key3
+&quot;14&quot;
+127.0.0.1:6379&gt; hmget hash1 key1 key2  //同时获取key1和key2的值
+1) &quot;12&quot;
+2) &quot;13&quot;
+</code></pre></div><ul><li>有序字符串集合（sort set）</li></ul> <p>sore set也叫有序分数集，可以把它看作一个排行榜，每一个同学都有自己的分数，且排行榜中还有一个排名的属性，排行属性从0，根据分数不断变大，排行也不断变大。
+，这个类型有点复杂，上一张图吧。</p> <p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-LKwxHrkS-1577524600617)(http://on-img.com/chart_image/5b9b8467e4b015327ae08e1a.png)]</p> <p><strong>sort set特性</strong></p> <p>1）sore set中的值是全局唯一的。</p> <p>一个值设置了之后，再次设置不会增加，只会覆盖修改。</p> <p>2）如果有两条分数相同，排名应该怎那么看？
+如果两个分数值形同，会根据值两个元素变量名的字典排序顺序排列先后，可看下方操作代码。</p> <p>代码实际操作过程：</p> <div class="language- extra-class"><pre class="language-text"><code>127.0.0.1:6379[1]&gt; zadd zset1 10.1 val1 //添加一个值和分数
+(integer) 1
+127.0.0.1:6379[1]&gt; zadd zset1 11.1 val2
+(integer) 1
+127.0.0.1:6379[1]&gt; zadd zset1 9.2 val3
+(integer) 1
+127.0.0.1:6379[1]&gt; zcard zset1 //统计当前key下值的个数
+(integer) 3
+127.0.0.1:6379[1]&gt; zrange zset1 0 2 withscores  //查看0到2的所有值和分数按照排名
+1) &quot;val3&quot;
+2) &quot;9.1999999999999993&quot;
+3) &quot;val1&quot;
+4) &quot;10.1&quot;
+5) &quot;val2&quot;
+6) &quot;11.1&quot;
+127.0.0.1:6379[1]&gt; zrank zset1 val2
+(integer) 2
+127.0.0.1:6379[1]&gt; zadd zset1 12.2 val3 //覆盖iu该val3
+(integer) 0
+127.0.0.1:6379[1]&gt; zrange zset1 0 2 withscores//查看0到2的所有值和分数按照排名
+1) &quot;val1&quot;
+2) &quot;10.1&quot;
+3) &quot;val2&quot;
+4) &quot;11.1&quot;
+5) &quot;val3&quot;
+6) &quot;12.199999999999999&quot;
+127.0.0.1:6379[1]&gt; zadd zset1 12.2 val2
+(integer) 0
+127.0.0.1:6379[1]&gt; zrange zset1 0 2 withscores//这时候有两个分数相同,查看0到2的所有值和分数按照排名
+1) &quot;val1&quot;
+2) &quot;10.1&quot;
+3) &quot;val2&quot;
+4) &quot;12.199999999999999&quot;
+5) &quot;val3&quot;
+6) &quot;12.199999999999999&quot;
+
+</code></pre></div><p>继续学习，请看进阶篇：https://blog.csdn.net/xgangzai/article/details/82687552</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/database/mysql/writeSql.html" class="prev">如何写优雅的SQL原生语句</a></span> <span class="next"><a href="/database/detail-redis2.html">详细学习redis_进阶篇</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div class="qrcode_container" data-v-5687ca4d><div class="tencent_code" data-v-5687ca4d><h4 data-v-5687ca4d>关注作者公众</h4> <p data-v-5687ca4d>和万千小伙伴一起学习</p> <img src="/ggh.jpg" alt data-v-5687ca4d></div> <div class="group_code" data-v-5687ca4d><h4 data-v-5687ca4d>加入技术交流群</h4> <p data-v-5687ca4d>扫描二维码 备注<span data-v-5687ca4d> 加群</span></p> <img src="/wechat.jpg" alt data-v-5687ca4d></div></div><!----></div></div>
+    <script src="/assets/js/app.c279a524.js" defer></script><script src="/assets/js/2.0c1afcb6.js" defer></script><script src="/assets/js/24.48aa175f.js" defer></script><script src="/assets/js/7.84ef9767.js" defer></script><script src="/assets/js/12.f1c48cfc.js" defer></script><script src="/assets/js/13.70bd7ce1.js" defer></script>
+  </body>
+</html>
